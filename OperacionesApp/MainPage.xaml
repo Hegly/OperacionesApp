@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:operacionesapp="clr-namespace:OperacionesApp"
+             x:DataType="operacionesapp:App"
+             mc:Ignorable="d"
+             x:Class="OperacionesApp.MainPage">
+
+        <!-- Pestaña 1: Suma -->
+        <ContentPage Title="Suma">
+            <VerticalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+           
+            <Label
+                Text="Ingrese el primer valor:" />
+            <Entry
+                x:Name="SumaEntry1" Text="Valor 1" />
+
+            <Label
+                Text="Ingrese el segundo valor:" />
+            <Entry
+                x:Name="SumaEntry2" Text="Valor 2" />
+
+            <Label
+                Text="Ingrese el tercer valor:" />
+            <Entry
+                x:Name="SumaEntry3" Text="Valor 3" />
+
+            <Button
+                Text="Sumar" Clicked="OnSumaClicked" />
+
+            <Label
+                x:Name="SumaResultadoLabel" Text="Resultado" />
+
+            <Button
+                Text="Limpiar Campos" Clicked="OnLimpiarClicked" />
+
+            </VerticalStackLayout>
+        </ContentPage>
+
+        <!-- Pestaña 2: Resta -->
+        <ContentPage Title="Resta">
+            <VerticalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+               
+            <Label
+                Text="Ingrese el primer valor:" />
+            <Entry
+                x:Name="RestaEntry1" Text="Valor 1" />
+
+            <Label
+                Text="Ingrese el segundo valor:" />
+            <Entry
+                x:Name="RestaEntry2" Text="Valor 2" />
+
+            <Button
+                Text="Restar" Clicked="OnRestaClicked" />
+
+            <Label
+                x:Name="RestaResultadoLabel" Text="Resultado"/>
+
+            <Button
+                Text="Limpiar Campos" Clicked="OnLimpiarClicked" />
+
+            </VerticalStackLayout>
+        </ContentPage>
+
+        <!-- Pestaña 3: Multiplicación -->
+        <ContentPage Title="Multiplicación">
+            <VerticalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+                
+            <Label
+                Text="Ingrese el primer valor:" />
+            <Entry
+                x:Name="MultiplicarEntry1" Text="Valor 1" />
+
+            <Label
+                Text="Ingrese el segundo valor:" />
+            <Entry
+                x:Name="MultiplicarEntry2" Text="Valor 2" />
+
+            <Label
+                Text="Ingrese el tercer valor:" />
+            <Entry
+                x:Name="MultiplicarEntry3" Text="Valor 3" />
+
+            <Button
+                Text="Multiplicar" Clicked="OnMultiplicaClicked" />
+
+            <Label
+                x:Name="MultiplicaResultadoLabel" Text="Resultado" />
+
+            <Button
+                Text="Limpiar Campos" Clicked="OnLimpiarClicked" />
+
+            </VerticalStackLayout>
+        </ContentPage>
+
+        <!-- Pestaña 4: División -->
+        <ContentPage Title="División">
+            <VerticalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+                
+            <Label
+                Text="Ingrese el primer valor:" />
+            <Entry
+                x:Name="DividirEntry1" Text="Valor 1" />
+
+            <Label
+                Text="Ingrese el segundo valor:" />
+            <Entry
+                x:Name="DividirEntry2" Text="Valor 2" />
+
+            <Button
+                Text="Dividir" Clicked="OnDivideClicked" />
+
+            <Label
+                x:Name="DividirResultadoLabel" Text="Resultado"/>
+
+            <Button
+                Text="Limpiar Campos" Clicked="OnLimpiarClicked" />
+
+            </VerticalStackLayout>
+        </ContentPage>
+
+</TabbedPage>
